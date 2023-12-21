@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+Main{
+    background-color: rgba(46, 196, 182, 0.05);
+    height: 100vh;
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    padding: 81px 140px
+}
+
+.leftContainer, .rightContainer{
+width: 48%;
+display: flex;
+flex-direction: column;
+}
+
+.leftContainer{
+    gap: 50px
+}
+
+.leftContainer p{
+    max-width: 460px;
+}
+
+.leftContainer div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+span{
+    color: #2EC4B6;
+    text-decoration: underline;
+}
+
+.rightContainer{
+    /* height: 600px; */
+    background-color: #fff;
+    box-shadow: 5px 5px 49px -17px rgba(0,0,0,0.7);
+-webkit-box-shadow: 5px 5px 49px -17px rgba(0,0,0,0.7);
+-moz-box-shadow: 5px 5px 49px -17px rgba(0,0,0,0.7);
+padding: 40px;
+gap: 30px;
+}
+
+.rightContainer > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.forminput{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.forminput input{
+    padding: 14px 16px;
+}
+.lowerRightContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.lowerRightContainer > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lowerRightContainer input{
+    padding: 14px 16px;
+}
+button{
+    padding: 16px;
+    background-color: #2EC4B6;
+  color: #fff;
+    border: none;
+    box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.25);
+-webkit-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.25);
+}
+
+
+/* media query  */
+@media screen and (max-width: 960px) {
+    .container{
+        padding: 50px;
+    }
+  .forminput{
+      width: 100%;
+  }
+  .rightContainer{
+      padding: 20px;
+  }
+  /* .container {
+      flex-direction: column;
+      gap: 40px
+  } */
+  }
+  @media screen and (max-width: 600px) {
+.container{
+    padding: 20px;
+}
+     .rightContainer, .leftContainer{
+    
+         width: 100%;
+     } 
+     .container{
+         flex-direction: column;
+         gap: 40px;
+     }
+     .leftContainer p{
+        max-width: 100%;
+    }
+  }
+  
